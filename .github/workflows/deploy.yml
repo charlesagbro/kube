@@ -29,7 +29,7 @@ jobs:
           AWS_VERSION_LABEL=${{env.APP_NAME}}-${{env.PIPELINE_ID}}
 
           echo "creating source bundle"
-          zip -r {{env.APP_NAME}}.zip *
+          zip -r ${{env.APP_NAME}}.zip *
           S3_KEY="$AWS_VERSION_LABEL.zip"
 
           echo "uploading source bundle to S3"
