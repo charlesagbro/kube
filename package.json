@@ -1,0 +1,16 @@
+{
+  "name": "charles-app",
+  "version": "1.0.0",
+  "description": "Hello World in Node with Express",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "docker:build": "docker build . -t charles-app",
+    "docker:run": "docker run -p 49160:8080 -d charles-app"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
